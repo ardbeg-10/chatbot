@@ -1,0 +1,217 @@
+Timestamp,Sentence, Topic, Summary
+00:03:59.230,"we have two groups of numbers. As you can see on you, we have whole numbers, whole numbers, and we have decimal numbers. For whole numbers, we can define the number. In programming languages like C, like C plus plus, like Java, you can say, I would like to define a number to create a variable which is called x appetite integer. So this means that these locations, it will store whole number."
+00:04:36.300,"It can store value like seven, like five, like minus nine, but it cannot store value like 0.5 because you define the number as whole number. We have different types of whole numbers. In general, whole numbers can be, when it comes to computer course you can define the number as chart, you can use short, you can use end, you can use long end. And mainly in these courses you see similar things in different programming languages. But mainly we'll talk about the main difference between them is the size."
+00:05:21.640,"So when you define x as a variable of a type, shard means x would be just one byte. We're going to just have, and as we said last time, byte means we have eight bits to have a location that would store value, which is whole value, and the maximum size is one byte, which means that the total number of possibilities which we can store here will be 256. Two, four, eight, yes."
+00:05:58.770,"Now if you would like to be with larger numbers, then you have to use other data types, something like short, let's say when you define something of the type short, most compilers will make two bytes actually for you and store your variable in two bytes. When you define something of a type integer, most compilers will make it four. Four bytes and you can store something in four bytes. When you define something as long end, it means you have eight bytes, which means you have more possibilities to sort it. But this is not standard."
+00:06:29.660,"I mean the size itself, two by four by eight by. It might be different from one compiler to another compiler, but in general this is what most of them will follow. Now we need to differentiate also between two things when it comes to professional definition of these values. So what you can do, you can say, okay, I would like to define, in programming languages like C, you can be more specific and you can say, okay, I would like to define one byte. When I would like to call it x."
+00:07:09.980,"And I'm going to store whole numbers in these things, but I would like these to be unsigned. You can write like this in C and keep yourself and you can say, no, I would like this to be time."
+00:07:28.590,"There are two options. You can just define the same location to store signed number or to store unsigned value. And the main difference between them many, is the number of the range as well. So this is one byte and this is one byte as well. Both of them same size."
+00:07:48.630,"In here we have two power, eight different possibilities. So we have 256, we have 266 different options in each one of them. But the range would be different. If you define this location as unsigned char, it means that you can store here any value from zero to 255."
+00:08:13.870,"So the maximum number which you can store here, you can write x equal to 255 and that would be fine. When you define x as sine chart, it means that the location will store sign value, which means that the smallest number will be -128 and the maximum number will be as far as the number 127. So you will not be able to say, you will not be able to say store NY 255 or 230. Let's say this will give you an error message because the maximum value that can be stored here is 127. Does make sense."
+00:09:01.150,"And you can also any question, first of all, it also assigned just takes up one bit. We'll talk about the sign, just give me some time. But in general, so in general, you can be specific. In most of the programming languages that will give you a lot like a lot of control. Actually some programming languages, they don't give you these options."
+00:09:30.360,"You can just define something as n or as char or as whatever. But some other programming language, they give you these options. Now in C, in specific you have two options. In C you can define something as chart and you can define something as nsign chart. So when you write chart, this is equivalent to sine sharp."
+00:09:59.730,"So you write like this, or you write like this, same thing. You can define something as int and you can define something as unsigned int. When you write int, it means you mean sign int. That would mean you can define something as assured you can define something as unsigned short. When you write short it means sign short."
+00:10:29.420,"You can define something as long n, which means sine long n. So by default if you don't mention anything, the compiler will consider that you mean you would like to solve diamonds."
+00:10:46.590,"So we differentiate between signed and unsigned value. And the main reason to explain about that, because we would like just to see how these numbers are represented incompetent of course, we have the other type of numbers, the float numbers, as we said before. So we have numbers like zero point 75, 2.48. For whole numbers, we differentiate, as we said, between sign and unsigned."
+00:11:17.130,"Let's just have a look. Let's see what we mean, how each one of them will be represented. Now for unsigned numbers, unsigned numbers name. If you have value like seven, as you can see, here's like seven. Then when you say to the computer, when you write as an instruction, okay, I would like to define unsigned sharp x."
+00:11:50.160,"And I would like to store in it the value seven. Then what the computer will do, let's say it will define location in the memory of a size one byte and will store in this location what is equivalent to these seven in binary. So seven in binary is equivalent to 1001. Yeah. Is it like this again?"
+00:12:29.230,"How many zeros? 503150. P one. Yes, you're right."
+00:12:38.450,That was nine. Correct. So this is seven. Yeah. So that's what the computer will do.
+00:12:49.820,"As you can see here, it will just find the equivalent representation of the value in binary. And it will store it straight away. It's just unsigned number. I don't care about the sign in this case, it will just figure out what's equivalent to these value and will store sequence of zeros and ones that matches these value in binary. Same thing."
+00:13:12.030,"Let's say when we define ten, same thing. When you store, let's say 40, we store 50. The main difference between when you say unsigned short and unsigned n, let's say x or y equals seven, it will be the same thing. The same representation will be used. But instead using one byte, four bytes would be used."
+00:13:39.990,"In these days, the same value would be 41100. And bunch of zeros would be print here. But we just take more pipes."
+00:14:02.090,Do I have any question?
+00:14:06.590,"Okay, now the difficulty which we have is for signed numbers, for signed numbers. So for signed numbers, if we have sign numbers, let's just make some brain story. We know how unsigned numbers can be stored right now. It's just the equivalent value of these value of these decimal numbers. Combinary, that's what will be used."
+00:14:29.590,"But what if we had the same sign number? What if we had the same negative seven? How can we store the negative seven? What do you suggest, guys? Instead of seven, I have one by."
+00:14:40.960,And I would like to store this by negative seven. So how can we store this one? What do you suggest? What suggestions do you have? We use one of the bits indicated.
+00:14:49.760,"It's possible like this. Very good suggestion. So the first thing that will come up to use one of the bits to store the sign. So we can just consider these. Okay, so I can just say, okay, seven is 1100, and we have another zero here."
+00:15:11.270,But just consider this one as a sign bit.
+00:15:19.730,This is seven. And I want to score negative seven. I can just make this one one. And I can just make 0011. So this is negative seven.
+00:15:31.850,"This is positive seven. That's the first thing that will come up. You know, use sine bit, which looks fine. Actually use the sine bit. But mainly this is with this one, we have some disadvantages."
+00:15:49.030,"Let's see what we have or what difficulties we have when we use this representation. So the first suggestion is to use sign magnitude. Okay? So let's assume that instead of using, let's say we have three bases for simplicity. Okay?"
+00:16:06.550,"So in this case, zero will be represented as we will have negative zero. In this case, we have two representations for zero. For this item does make sense."
+00:16:25.370,"Using this concept, we will have one represented like this. And we'll have negative one represented in this way. So one will be zero, zero, one. Negative one will be instead of zero at the beginning, when I just have the sign 10, one. Okay, plus two will be like this."
+00:16:46.360,"Negative two will be like this. Positive three would be like this. Negative three would be like this, which looks fine, but apart from having two representation for zero, we have some other disadvantages. Mainly the disadvantages which we have. First of all, it, first of all, we have, we have positive zero, and we have negative zero."
+00:17:16.320,"We have two solution for zero. The second advantage is that when we do the math, let's say, let's do plus three, minus three, plus one, let's say, what's minus three? This case, using this representation, minus three would be one, one, and plus one would be."
+00:17:43.170,"If we add these two, I'll just add these two. If I do that in decimal minus three plus one, I should get minus two. Yeah. Let's do it here. One plus one, two."
+00:17:58.620,"Yeah. So two is zero. One, yeah. So zero. And we have one in the carry, one plus one is two."
+00:18:09.500,"We have zero here. And we have one in the carry. One plus one is two. So we have these. Okay, and forget about this one."
+00:18:21.490,"Forget about this one. If we're talking about just three bits, it says three bits for now. So this is, so we're not able to do the math. Does make sense. So this is not a good representation."
+00:18:44.870,What other options do you have? Everything down.
+00:18:54.810,"Shift everything down to the left. So zero. Zero is negative 16. So this is negative 16 and then zero, zero. One is negative."
+00:19:11.470,"This is negative 15 and then 0010 negative. So this is, why don't you do that? I mean, what is, what way did you get this idea from?"
+00:19:31.030,"Okay, let's just do it. Let's try this one. So with these positions."
+00:19:38.550,"So this is negative 16, this is negative 15, this is negative 14. What would be then 16? Let it should be a five bit. Thank you."
+00:19:57.550,"That's what you need. Yeah. So what would be positive one, one."
+00:20:10.770,"What would be positive 15 would be one, one, no, maximum would be 15, I think. So this would be what would be next for one, 10. So this would be positive 14. What that? What will be negative 13?"
+00:20:50.750,What would be positive 15?
+00:20:55.390,"10110, what do you think? What would be zero now minus two would be 10. Zero it. If you do the math right now, [00:21:56.470] add these two will be there, this will be submitted."
+00:22:08.730,"Maybe we shift it down to those 20. So we have to find a way. Yeah, I think this is a good suggestion. What do you think, guys?"
+00:22:22.190,"We need to shift somewhere. Yeah, this is a good suggestion."
+00:22:36.450,"It's not that simple, but it's, it's pretty similar to this one. What other options do we have? What do you suggest?"
+00:22:48.790,"Alternate suggestion could be, I'll get back to the suggestion. Other suggestion could be to get the estimated of each one of the bits. So if we have a say, if we have this guy positive seven, which is 1100, then negative seven can be you flip everything. So, and that's what we call usually the one complement. So this is usually what comes up straight away as well."
+00:23:42.180,So this one also has some advantages.
+00:23:47.450,"So mainly with this representation, the second representation we will have, will have one, like zero, zero, one, and negative one will be one. 10, anyone becomes zero and zero becomes one. Okay. But this case, Java was a two representation for zero. Does make sense."
+00:24:14.930,"And if you do the math as well, you will see that we have a problem as well. So if you just do the same numbers, just add negative three to plus one, this will be something that's not expected. Instead of doing it where it comes up again, I guess you do it where's zero and then it goes one. So like negative one just kind of having it where basically it counts upward in the binary sequence, but every other number is negative. And so you can divide by two, I guess to get like the number you're looking for."
+00:24:59.920,That's correct. So we need something that considers the two. Yeah.
+00:25:05.390,"So mainly, as you can see, these two suggestions, they don't work. That's why the third suggestion, which is pretty similar to what you suggested."
+00:25:18.470,"So you can see the problems which we have. The third one is called the twos component. So instead of completing to one, complete to two. So what we did here, we have the component of each one of the digits to one. But what we would like to do if we had 1100, so what we did, we wrote the complement."
+00:25:47.350,So we call that the one complement.
+00:25:53.250,"So in one complement, in one complement, the complement of zero is one. The complement of one is zero. That's what complete the number to one. If I had one, how much shall I add to one in order to get one? How much shall I add to zero in order to."
+00:26:21.610,"How many values should I add to zero in order to get one? That will be one. Now in twos complement tools, complement, we do similar thing, but instead of adding two, instead of finding the complement of one to one, we find the complement of one. Two. Two."
+00:26:42.260,So how much shall I add to one in order to get two?
+00:26:49.410,"And that in order to get two, I have to add two. One one. In order to get two, I have to add 20 two, which is in binary, one and zero does make sense."
+00:27:13.610,"So in two complement, if you have value like seven, if we have value like plus seven, in one complement, seven is 1100. If I want to use the one complement, I have to get the complement of each one of them. The one complement of one is zero. The one complement of one is zero. The one complement is one is zero."
+00:27:43.990,The one complement of zero is one. This is one. This is one. This is one. And this is one.
+00:27:52.620,"Yeah, that's what we did before."
+00:27:57.930,Now the tools complement of the value 1100 is what completes that to two. Not to one.
+00:28:14.430,Complete one. Two is one. Does make sense. What completes one? Two is one.
+00:28:27.330,What completes one? Two. Two is one. Okay. What completes zero to two is two.
+00:28:37.330,One. Two here. So that would be zero. And we have one in the carry.
+00:28:44.230,Now we have one. What completes one? Two
+00:29:19.410,is one. Yes. What completes this one is one.
+00:29:25.640,What completes this one is one.
+00:29:32.310,Don't you have to carry for about zero?
+00:29:42.250,"I thought for the first zero you carried a one. And then for the rest of the month, I think, yeah. This one has to be one. Yeah. So this one has to be"
+00:30:36.830,it.
+00:31:01.470,"The first one, in order to flip it, we have to make it. We have to add one. Yes. And for the second one, in order to flip it, it should be able to finish. So we have one for the first one."
+00:31:35.490,"That's what completes one to two. Yeah. And what completes one to two is what completes one to two is both of them, guys. What completes these to two will be zero and one. Yeah."
+00:31:53.670,"What completes the whole number, guys, not just the digit. Does that make sense?"
+00:32:00.390,What completes the whole number? Not just the digit complete. The whole number will be zero and one. And that will be one. And that would be zero.
+00:32:11.840,Sorry. And that would be then one. One.
+00:32:17.550,"Okay. As you can see, the whole number, guys, not just the digit."
+00:32:26.510,Let me just say that in different way.
+00:32:30.750,"Yeah, you can do it in different way. Of course. So what you can do instead, if you want to just make it an easy way, so you can just. That's it."
+00:33:18.430,"What you can just do. If you want us to think about that in easy way, I would say that from different points of view, because it might be confusing. What you can do is you might take the two complement of a number, take the one complement, and then add one. So this might be much more easier. So the one complement of these numbers is just everything."
+00:33:47.530,And that's the one complement.
+00:33:51.930,"Everything, yes."
+00:33:55.610,"Okay, so that's the one complement. That's what complete each one of them into one. And the two complement is just by adding one to what? So the, the tools complement just to add one to these values we have here. So when you add one to this one, so we have zero plus one is one."
+00:34:24.860,Yeah. And then we have 0011. And that's the two component of that.
+00:34:44.490,"Let's assume that we would want to find the binary, or the binary representation of a number. Like, let's say we have number like nine. Okay, so what's nine is 1001, we have a bunch of zero. Yes. Right before."
+00:35:27.980,"Yeah, it. Well, they will not be able to see here. Okay, so I will just explain one example here and one example here. Okay, can you see? Yes."
+00:35:47.090,"Okay, so if we have positive nine, let's say so nine will be 1001 and we have bunch of zeros on the left. So I would like to find negative nine. What's negative nine of these numbers? I can just flip everything."
+00:36:09.990,Flip everything and then add one. So this will be negative nine will be 11011. This would be negative nine.
+00:36:26.170,"So this one, this one is the one complement."
+00:36:34.430,And we call this value the tools complement.
+00:36:44.110,Okay.
+00:36:47.950,And that's what uses in the computer. It's the tools complementary present.
+00:37:16.910,"Just to make it clear for those who confused before to how this can be the two complement, if you try to add one plus one, what do you get? You get two. Yeah, you get two does my friends. And when you add zero plus one with the carry, you get two. Does make sense."
+00:37:42.370,"When you add zero plus one with the carry, you get two as well. So now you get two for each one of them, considering the whole number. That's what I said when I said find the component. How is it near now?"
+00:37:59.270,"Can you have an example with an even number? With an even number, sure. Let's try different numbers. I think I will make sure to bring my iPad."
+00:38:17.870,"So let's try to use different number, like even number."
+00:38:25.010,"Let's say we have number. Let's say eight. Okay, so eight is 10, zero. Okay. And we have."
+00:38:37.830,"You don't have to write all of the zeros. It depends on how many bits you would like to use. Let's say we would like to use one byte. So the positive, the negative representation of a is 100100."
+00:38:57.390,"So this is positive eight. If I would like to find the negative eight, I can just flip everything. So I can flip everything 11011 and then just add one."
+00:39:15.230,"So when you add one, this will be one plus one is two. One plus one is two. One plus one is two."
+00:39:31.110,This is the negative representation of anything.
+00:39:39.610,An easier way to do that is just to just lift everything and add one. After that you can just.
+00:39:58.510,"What you said, but what you said was 16, maybe now we care about two. So it's like hitting for the two because we deal with just two there. So that works fine with math. With all of the math. So if you just do the math, it will be fine."
+00:40:13.410,"And if you see later on, you will notice that we have just single representation of zero."
+00:40:20.790,"So an easy way to find the most complement of any number. If you would like to figure out number, like, let's say eight. So eight is eight as it is 10 zero. We have points of zero on the rest. You can do it in this way if you want, but I enjoy it will be just to flip everything until you reach out to the last one on the right."
+00:40:46.510,"The last bit that has one from right. Okay, so this is the last one. The last place that has one. You keep it and keep everything after that does make sense."
+00:41:09.890,We have this question in the pine.
+00:41:15.510,"Okay. Guaranteed you'll have similar questions in it. I repeat again, you have two options. If you want to find the two components, flip everything, the 111011 and then add one, which is one of the options. Okay."
+00:41:34.480,Or you flip everything until you reach to the bit that has the last one from right. You keep it and keep everything after that one. Let's just have another time. Just leave it here. I'll do the board now so that you can see it.
+00:41:54.390,"Let's say we have number. Like, let's say 14. So 14 is 1100."
+00:42:09.690,Sorry. This is twelve. Yeah. And we have zero. Zero.
+00:42:16.330,"Okay, so I figure out what negative twelve. I can straight or you flip everything. So this one, it will become one. This one become one. This will turn into one."
+00:42:28.750,This will turn into one. This will turn into zero. Until I reach to the last bit that has one on the right. I keep it and keep everything after that. Okay.
+00:42:39.730,You can just verify if you want. You can verify that in two ways. If you want to verify that you can flip everything.
+00:42:48.390,You add one and you will get.
+00:42:54.070,"You can verify that also by adding minus twelve to add these two to each other. Okay, twelve is negative twelve based on our calculation, 110100. So add them to each other and the output should be zero. Okay, so let's say zero plus zero is zero. And the current one, one plus one is zero."
+00:43:22.660,And the curry is one. Okay. One plus one is zero. The curry is one. This would be zero.
+00:43:28.420,"This would be zero. And we have one. But this is theorem outside which we have, which means that we have zero. That is to be able to verify your answer in this one."
+00:43:48.410,"So with two complements, we have no problem. We have only single representation of zero. Okay, we can do the math without any problem. You can just try different numbers, add them. You'll be able to see that the output would be correct number at the end of the day."
+00:44:10.430,"So it will be as expected. The range of numbers will be from minus two power n minus one to two power n minus one. So let's say when you rebate, this would be from minus four, two plus three. Okay?"
+00:44:33.990,"And that's what our computers use nowadays. So every time you write x, you define x as integer. Every time you define x as integer in your computer, let's say chart x, okay? So the. And you say if equal to seven or eight or whatever, okay?"
+00:45:20.410,"So the computer will understand that those components will be used to represent the value. So these seven will be represented as 1100. That's what will be stored into the byte, which is called x. And if you change your mind, you said, I would like to store negative seven in the eight. Okay?"
+00:45:41.600,"Then the component of this number will be stored. So what will be the actual zeros and ones that will be stored inside the computer will be. In this case, as we said before, it will be just 10011. Okay. That's what will be stored actually inside the computer."
+00:46:01.490,I hope you get the idea. Any questions?
+00:46:06.610,So we know now what will be stored inside the computer when we define something? When we define something as whole number and how it would be stored if it was positive number. And now what would be stored towards negative number? Two complement would be you. It.
+00:46:39.070,"Now, just for your information, it you have different types of questions in the quiz. Okay. Some of the questions would be what will be the binary representation of negative seven using one by, I said using two bytes, sorry. You fill zero years and include that."
+00:47:21.550,"Okay, so this is one type of questions which you will get and which you have to."
+00:47:29.570,"Can you see it? No, the other type of question. So the first type of question is you will be given a value in decimal and I will ask you, okay, what will be stored as an equivalent of these values into the computer in one byte or in two bytes? So minus seven will be equivalent to 10011. This is one type of question."
+00:47:58.100,"Another type of questions I will ask you, okay, what is this value? If you know that this is a value which is represented using two complement, what will be equivalent to these sequence of zeros and ones as decimal numbers? Okay, so what you have to do, in this case, you have to look at the last digit. And if the last digit was one, it means that this is a negative number. Just keep it in mind using two complements representation."
+00:48:27.810,"So this is a negative number, which means in order to know what is the value, I have to find the positive value. So what you have to do, you have to do the opposite of what we did. So you take the twos complement of this."
+00:48:46.070,"Okay, so the two complement of this one is just do exactly like what we did before. You flip everything. You flip everything till the last one on the right. You keep it. So this is the positive of these values, which is positive seven."
+00:49:08.000,"And this is negative. So this is negative seven. Does make sense. Any question, you get this question in the quiz, guys. Okay."
+00:49:21.990,"Number. And we want to take a two ultimate. No, just take everything and add one."
+00:49:35.510,"If we add one, really? No, if it was a text, if it."
+00:49:50.350,So this is positive eight. Yes. The negative eight will be 1100. This is negative eight. Yes.
+00:50:02.590,"So I gave you these values, as I said, what is equivalent to these values in this? So all what you have to do is just to find the component and also to find the complement, you have two options. You can flip everything and add one."
+00:50:25.930,"And that would be this case, zero one. Okay, so you have zero 10. Okay. And you have one and you have bunch of zero. This is the value."
+00:50:42.110,You flip everything to zero from left to right until you reach the last one. Keep it and keep everything after that one.
+00:50:54.370,You can double check if you want. Add the two values and you'll be able to know.
+00:51:01.730,"They have your attention, please. They have your attention, please. Building operator speed. Have your attention, please. Building operators."
+00:51:14.410,We are doing maintenance on the fire alarm system. Disregard wallpoints and strokes.
+00:51:25.050,We are going to be working on the fire suppression system.
+00:51:33.150,Thank you.
+00:51:37.790,Thank you.
+00:51:51.910,"Okay, guys, what should we do now?"
+00:52:00.070,Do you have a question?
+00:52:04.870,No question. Wait.
+00:52:11.110,"It doesn't have to be eight bit. This could be determined already, except to be eight bits of. That's like this negative. If you can just look at the last digit and it wouldn't determine that this is a new number. So was one."
+00:52:35.380,The last digit from the rest was one. It means it's the negative one.
+00:52:48.790,"Sorry, I mean, starting with one and rest are zeros. This number of which. Which number can you get? Start with one and rest are zero. That there are two."
+00:53:26.130,This number would never be used because what is this number?
+00:53:35.250,Hold on.
+00:53:39.730,"So this is a major number. Yeah. So if you'd like to know what is this number, find the equivalent for this number. So flip everything. Okay."
+00:53:50.330,This would be zero. Okay. And we have one. One.
+00:53:58.970,"Okay. And then add one. Yeah. To get the equivalent value, what would be the value there? The same number as it was should be 1234-5678 so this is a negative value."
+00:54:25.110,So if you want just to find what is equivalent to this value.
+00:54:30.310,"So when you add one, subtract."
+00:54:34.310,"So this would be zero. 10. 101-010-1010 I mean, this number would never be used because the maximity of this number is exactly the number."
+00:54:59.390,"No, I see. I feel. So it depends on the number of ways which you use. This is a book."
+00:55:07.310,"What I mean, so it depends on the number of ways which to you."
+00:55:15.990,"I'm not sure if you like, you just ate this. Maybe you will have one final number."
+00:55:37.150,I don't get one. One.
+00:56:07.350,"So if you flip everything, you get one, one. And then add the one to this with the same number."
+00:56:21.130,"So if you're doing the method where with everything until the final, then I would be complement zero and then all the ones."
+00:56:50.270,I think that negative 128 and bottom is negative 127.
+00:57:01.190,"You can't represent positive 128 with a six because as I said before, you can't. You have from minus two n minus one, minus one. So you'll not be able to represent the positive alternative of December. You get the same number. That's what I said."
+00:57:36.530,"I mean, if you would like to represent the equivalent value. You need more bits. That's what I said. You need more bits to represent this value in this case. So this value has no equivalent positive."
+00:57:52.050,"That's what I mean. Does make sense, because we have, let's say you have, with three bits, you can represent from negative four to positive three through negative four. You cannot represent positive four with three bits. That's what I said. I mean, you need more bits in order to represent that one."
+00:58:15.250,"That's why when you dictate the component, we get the same value."
+00:58:21.490,"Okay, so we have also, we have a special representation for float numbers. So for float numbers, they are represented. And whenever you define a value as a float value, you have different options as well. You can just define, you can use keywords like, for example, you can use keywords like float, like double, like long double. So you can just use any of these to declare a closed number or a variable that will store closed numbers."
+00:59:05.870,"These will use certain number of files, and what will be stored into these pipes will be a float value."
+00:59:18.210,"That's a float number. Now, for float numbers, we have a special type of representation. They are present special way, which you have to pay attention to a little bit, which is called IEEe floating point representation. So what happens nelly, if we have, I will explain that multiple times to pay attention, guys, because it's a little bit confusing. So if we had value like 5.75, and we would like to see what is the equivalent zeros and ones of these values, what the computer will do, mainly, it will just find the equivalent representation of each one of them."
+00:59:54.260,"So five is equivalent to 1010 point 75 is equivalent to one, one outcome, me. So we have 5.75. Okay, so the whole part is five. Can you see here over there, guys?"
+01:00:39.530,"So five is, in order to find what's equivalent, as we did before, you can just divide by two and get the measure. So when you divide by two, you will get two and one is z. When you divide the two by two, you will get one and zero is left. When you divide the one by two, you will get zero and one is z. So five is equivalent to 10."
+01:01:04.330,"One, you put them in order. Does make sense. Now, 0.0.75. In order to find what equivalent to zero point 75, we don't divide by two. This is the fraction."
+01:01:22.110,"So we multiply by two. Okay, we multiply by two, and that will be 1.5. And what we do in this case, we take the whole part. So here we take the remainder. Here we take what is in the whole part."
+01:01:41.810,"Okay. And we repeat the process again. So the whole part, we have one in the whole part, and in the fraction we have 0.5. So we multiply that also by two. Okay."
+01:01:56.550,"And we repeat the process. So two times 0.5 is 1.0. In the whole part, we have one. In the fraction we have zero. So we stop here."
+01:02:08.670,And that would be equivalent to one and one. So this number is equivalent to 1.101 point eleven perspective.
+01:02:27.310,"I will give you another time. Just let me just pay attention right now. Okay, I will show different examples. So that's the first step, because we have different steps. So the first step is just to find what's equivalent to each one of them."
+01:02:44.710,"And then what they do, actually, they normalize the number."
+01:02:52.950,"What mean by normalizing the number? Normalization means to write the number to move these floating points, number of places to the left or to the right, so that we have one point. Something is that here. So these value is equivalent to these value because we moved the .2 places to the left. Then we have to multiply by two over two."
+01:03:21.950,"We did with vinyl. Okay, so we normalize the number. And then what we do after that? After normalization, they will look at the number. So this number is positive number."
+01:03:38.710,"So there is a special bit for the sign. And this bit we store because it's positive. Then we store zero. If it was negative, we store one. And what they do after that, they have two places."
+01:03:53.700,"One of the places for the exponent and another one for the fraction. So for the exponent, the exponent which we have here is two. So we take the two and we store the two here. So two is one and zero. But before we store the two, they add something which is called by busted actually, which is 127."
+01:04:19.090,"I will explain why. So when we add 127 to the two, this would become 129, okay? And 129 is equivalent to this sequence of zeros and ones. So this sequence would be stored into this part."
+01:04:35.290,"And what we do after that, we take, we take the fraction and we store it here as is, starting from the left. So the fraction is zero, one, one. So we store zero, one, one, and we fill zeros on the right. And that's what will be stored actually in your computer when you define value like 5.75 and distort it into x."
+01:05:05.890,That's what we call I travel e floating point representation. And this is the representation which is used in all of our computers nowadays.
+01:05:17.030,"Let's see some example, just to clarify the idea. And let's explain why we add these offsets. So let's see this one, let's see, for example, so $85 it 85.1 hundred 25. So 85 is equivalent to this sequence of zeros and ones. 10."
+01:05:55.470,1010-101-0101 it.
+01:06:05.270,"Okay. And for this fraction, as we said before, this is zero point 125. So you multiply these by two, you'll get 0.50 point, sorry, zero point 25. So the whole part is zero. Then we have the zero 20 point 25."
+01:06:36.350,We multiply this by two. So we get 0.5. So we have zero here and then we have 0.5 times two. So this will be 1.0. So we have one here and we put them in order.
+01:06:50.930,"But the way we put them in order is different from the way we put the other value in order, guys. Okay, so we put them in this way. So we put this one here, this one here and this one here. Okay, if you remember, guys, when we send about the five, five divided two equals to two and one is left. Two divided two equals to one and zero is left."
+01:07:19.300,"One divided two is zero and one is left. We put those in these way, we put both in these ways. Okay, just pay attention to the way you store the value. Does make sense."
+01:07:36.210,"Anyway, so we find what's equivalent to each one of them."
+01:07:41.570,Any question?
+01:07:44.630,"And what we do after that, we normalize the number. So we write the number in the normalized format, which means this is the whole part. This is the fraction, the floating point in between. This is not a normal format, normalized format. We need to move this point."
+01:08:03.610,"We have to write this number so that we have one point, something, okay? So we need to move this one to the left or to the right. Doesn't matter. It depends. Sometimes we have to move it to the right."
+01:08:15.060,So now we would like to move it to the left a number of times 123456 times. So this number would be equivalent to this times two over six.
+01:08:28.610,"And what we do next, we look at the number. This is a positive number. So we store zero here in the sine, so the sign will be zero, okay? And we take the exponent, which is six. We add offset, which is 127."
+01:08:42.380,"So six plus 127, we find what's equivalent to these value and we store these value combined. Okay? And we just store the fraction. So after the floating point, we have this. So we store it as is."
+01:09:01.130,"And that's the I representation of the floating point number. Now the reason to add 127, because sometimes this exponent, it might seem negative. So 127, it will be used actually to determine if the exponent is negative or positive. So if it was greater than 127. If this value was larger than 127, it means it's a positive exponent."
+01:09:28.690,"If it was more than 127, it means it's negative exponent. Now, this is not the best representation ever, but that's the best which we have right now. Okay? So some of you might say, why should we do it in this way? That's what they came up to."
+01:09:43.960,"That's the idea that we have right now. And it works fine. It's not the best idea. It has some advantages. Okay, but that's the idea."
+01:09:52.330,"Or that's the representation which is used currently. Right? So when a computer adds two floating point numbers, it can't just add them normally. Or does it have to be some special algorithm? No, computers, they don't understand if this was a floating point number or not."
+01:10:11.490,"But when you define the number as a float point number, it will be stored in this way. Now, when you add two numbers, it will consider adding those into the bit level and we'll talk about addition later on. Okay, any question, guys?"
+01:10:34.170,"No, it's not the fixed amount. It's not fixed amount of pipe. So this is another example, by the way. Let's say zero point 75. If you see, this would be equivalent to this representation."
+01:10:44.500,"The whole power is equivalent to zero. The fraction is equivalent to eleven. So we need to normalize it. When we normalize it, we have to move this to the right now, not to the left. When we move it to the right, this will become minus one."
+01:10:55.640,"So we add 127, which will be 126. 126 will be stored here, zero will be stored here, and the fracture will be stored here. Now, we have different sizes, actually. So right now with this one, with this one, have 32 bits. Okay, but that's when you define the number as a float number."
+01:11:15.610,"But when you define that as double, this will be 16 bits. This will be 16 by. Yeah, when you define that as long double, this will be double the size as well. So the main difference between them is just the size, the range of numbers which you can sort while we add 100. Because we would like to know if the value which we have here is positive or negative and 100, the way to determine it was positive or negative, if the value should be, was greater than 100."
+01:12:03.510,"We'll continue next time, guys. See you again. Thank you."
+01:12:11.910,"Professor, will we have this intention tomorrow?"
